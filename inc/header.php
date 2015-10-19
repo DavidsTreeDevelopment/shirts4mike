@@ -11,7 +11,7 @@
 
 		<div class="wrapper">
 
-			<h1 class="branding-title"><a href="<?php echo BASE_URL; ?>">Shirts 4 Mike</a></h1>
+			<h1 class="branding-title"><a href="<?php echo BASE_URL; ?>">Shirts 44 Mike</a></h1>
 
 			<ul class="nav">
 				<li class="shirts <?php if ($section == "shirts") {echo "on"; } ?>"><a href="<?php echo BASE_URL; ?>shirts/">Shirts</a></li>
