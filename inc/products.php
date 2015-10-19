@@ -42,6 +42,12 @@ function get_products_search($s) {
     return $results;
 }
 
+function get_products_count() {
+    $all = get_products_all();
+    $count = count($all);
+    return $count;
+}
+
 function get_products_all() {
 
     $products = array();
