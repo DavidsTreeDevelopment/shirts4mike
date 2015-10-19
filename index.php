@@ -29,7 +29,9 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 			<div class="wrapper">
 
 				<h2>Mike&rsquo;s Latest Shirts</h2>
-
+				
+				<?php include(ROOT_PATH . "inc/partial-list.html.php"); ?>
+				
 				<ul class="products">
 					<?php 
 

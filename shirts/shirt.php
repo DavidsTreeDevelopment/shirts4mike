@@ -67,4 +67,4 @@ include(ROOT_PATH . "inc/header.php");
 
 	</div>
 
-<?php include(ROOT_PATH . "inc/footer"); ?>
+<?php include(ROOT_PATH . "inc/footer.php"); ?>

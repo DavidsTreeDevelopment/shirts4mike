@@ -27,7 +27,9 @@ include(ROOT_PATH . "inc/header.php"); ?>
 				<input type="submit" value="Go">
 
 			</form>
-
+			
+			<?php include(ROOT_PATH . "inc/partial-list.html.php"); ?>
+			
 			<?php
 
 				if ($search_term != "") {

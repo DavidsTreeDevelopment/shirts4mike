@@ -1,18 +1,6 @@
 <?php
 
-function get_list_view_html($product) {
 
-    $output = "";
-
-    $output = $output . "<li>";
-    $output = $output . '<a href="' . BASE_URL . 'shirts/' . $product["sku"] .  '/">';
-    $output = $output . '<img src="' . BASE_URL . $product["img"] . '" alt="' . $product["name"] . '">';
-    $output = $output . "<p>View Details</p>";
-    $output = $output . "</a>";
-    $output = $output . "</li>";
-    
-    return $output;
-}
 
 function get_products_recent() {
     $recent = array();
@@ -30,6 +18,11 @@ function get_products_recent() {
     return $recent;
 }
 
+/*
+ * Loops through all the products, looking for a search term in the product names
+ * @param string $s the search term
+ * @return array   a list of the products that contain the search term in their name
+*/
 function get_products_search($s) {
     $results = array();
     $all = get_products_all();
@@ -46,6 +39,20 @@ function get_products_count() {
     $all = get_products_all();
     $count = count($all);
     return $count;
+}
+
+function get_products_subset($positionStart, $positionEnd){
+    $subset = array();
+    $all = get_products_all();
+
+    $position = 0;
+    foreach($all as $product) {
+        $position += 1;
+        if ($position >= $positionStart && $position <= $positionEnd) {
+        $subset[] = $product;
+        }
+    }
+    return $subset;
 }
 
 function get_products_all() {
