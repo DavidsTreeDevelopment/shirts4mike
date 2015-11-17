@@ -16,7 +16,7 @@ include(ROOT_PATH . 'inc/header.php'); ?>
 				<img class="hero" src="<?php echo BASE_URL; ?>img/mike-the-frog.png" alt="Mike the Frog says:">
 				<div class="button">
 					<a href="<?php echo BASE_URL; ?>shirts.php">
-						<h2>Hey, I&rsquo;m Mike!</h2>
+						<h2>Hello, I&rsquo;m Mike!</h2>
 						<p>Check Out My Shirts</p>
 					</a>
 				</div>

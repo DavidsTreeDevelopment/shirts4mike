@@ -30,7 +30,5 @@ try {
 	echo "Data could not be retrieved from the database.";
 	exit;
 }
-echo "<pre>";
-var_dump($results->fetchAll(PDO::FETCH_ASSOC));
 
 ?>
